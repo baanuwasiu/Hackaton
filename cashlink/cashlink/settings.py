@@ -6,11 +6,11 @@ from . info import *
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # EMAIL SETTINGS
-EMAIL_USE_TLS = EMAIL_USE_TLS
-EMAIL_HOST = EMAIL_HOST
-EMAIL_HOST_USER = EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
-EMAIL_PORT = EMAIL_PORT
+# EMAIL_USE_TLS = EMAIL_USE_TLS
+# EMAIL_HOST = EMAIL_HOST
+# EMAIL_HOST_USER = EMAIL_HOST_USER
+# EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+# EMAIL_PORT = EMAIL_PORT
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-a6y$r_!b&yw&d8@_p4*(^sd$)p+r&%ojkju+a3cq6f5hfc++ad'
@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     
     'main.apps.MainConfig',
     'peer2peer.apps.Peer2PeerConfig',
+    'geo_locator.apps.GeoLocatorConfig',
     'django.contrib.humanize',
 
     'mathfilters',

@@ -17,30 +17,8 @@ from django.utils.http import urlsafe_base64_encode
 
 def home(request):
     """
-    This is the signin method.
+    This is the Main page.
     """
-    context = {'sales': True}
-    # if request.method == "POST":
-    #
-    #     username = request.POST['account_id'].upper()
-    #     password = request.POST['account_password']
-    #     user = authenticate(username=username, password=password)
-    #
-    #     if user is not None:
-    #         login(request, user)
-    #
-    #         if user.username.upper().startswith("A"):
-    #             # Send Token to User
-    #             login_token_generator(request)
-    #             return redirect('accounts_token')
-    #
-    #         else:
-    #             messages.error(request, "You are not authorized here")
-    #             logout(request)
-    #             return redirect('accounts_signin')
-    #
-    #     else:
-    #         messages.error(request, "Login failed, invalid credentials")
-    #         return redirect('accounts_signin')
 
-    return render(request, 'management/sales.html', context)
+
+    return HttpResponse('')
